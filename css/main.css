@@ -56,7 +56,7 @@ nav li a:hover {
 .mainText h2 {
     font-size: 42px;
     font-family: 'Roboto Condensed', sans-serif;
-    line-height: 12px;
+    line-height: 42px;
 }
 
 .mainText p {
@@ -107,13 +107,12 @@ footer {
 
 .footerLinks {
     padding: 0%;
-    width: 25%;
     font-size: 18px;
+    border-right: 1px solid #74B9FF;
 }
 
 .footerLinks ul {
-    margin: 3% -5%;
-    border-right: 1px solid #74B9FF;
+    margin: 3% 3% 3% -12%;
 }
 
 .footerLinks li {
@@ -134,8 +133,8 @@ footer {
     width: 75%;
     display: flex;
     align-items: center;
-    margin-left: 4%;
     justify-content: space-between;
+    padding: 0% 2%
 }
 
 .formText {
@@ -146,7 +145,6 @@ footer {
 }
 
 .footerForm form {
-    padding: 0% 2%;
     display: flex;
     justify-content: space-between;
     width: 70%;

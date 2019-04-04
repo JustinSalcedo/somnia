@@ -1,0 +1,13 @@
+@media (max-width: 750px) {
+    .footerForm form {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+        height: auto;
+    }
+
+    #username, #email, #submit {
+        margin: 1% 0%;
+    }
+}

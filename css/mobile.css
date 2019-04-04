@@ -1,0 +1,29 @@
+@media (max-width: 600px) {
+    .formText {
+        font-size: 20px;
+    }
+
+    .footerLinks {
+        font-size: 12px;
+    }
+
+    .footerForm form {
+        padding: 2%;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav li {
+        font-size: 20px;
+    }
+
+    .imageSection {
+        display: block;
+    }
+
+    .mainImg img {
+        width: 200px;
+    }
+}
