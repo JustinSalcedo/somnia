@@ -50,7 +50,7 @@ nav li a:hover {
 }
 
 .mainText {
-    margin-top: 100px;
+    /*margin-top: 100px;*/
 }
 
 .mainText h2 {
@@ -170,7 +170,7 @@ footer {
     color: #B2BEC3
 }
 
-#submit {
+#submit, .buyButton p {
     background: #00B894;
     color: white;
     border: none;
@@ -185,4 +185,66 @@ footer {
 
 #submit:active {
     background: #08967a;
+}
+
+/*Products page*/
+
+.genImg img {
+    width: 100%;
+    text-align: top;
+}
+
+.productsContainer, .reviewsContainer {
+    display: flex;
+}
+
+.productCard {
+    width: 100%;
+    margin: 0% 3%;
+    box-sizing: border-box;
+}
+
+.productImg img {
+    width: 100%;
+    box-shadow: 0 0 10px #777777;
+}
+
+.productCard section {
+    padding: 0% 7%;
+}
+
+.productCard h3 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 0.5em;
+    font-weight: lighter;
+    font-size: 2.5em;
+}
+
+.productCard p {
+    font-size: 1.5em;
+}
+
+.buyButton {
+    padding: 0% 7%;
+    text-align: center;
+}
+
+.buyButton p {
+    font-size: 2em;
+}
+
+.reviewCard {
+    width: 100%;
+    border: 1px solid black;
+    margin: 0% 2%;
+    box-sizing: border-box;
+}
+
+.reviewImg img {
+    width: 100%;
+}
+
+.reviewImg p {
+    margin: -16px 0px;
 }
