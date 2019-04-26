@@ -22,14 +22,14 @@ nav ul {
 }
 
 nav li {
-    color: #0984E3;
     list-style: none;
     margin-right: 20px;
     font-size: 24px;
 }
 
-nav li a {
+nav li a, .links {
     text-decoration: none;
+    color: #0984E3;
 }
 
 nav li a:hover {
@@ -59,9 +59,8 @@ nav li a:hover {
     line-height: 42px;
 }
 
-.mainText p {
+.mainText p, .authorText p {
     font-size: 24px;
-    margin-bottom: 50px;
 }
 
 .imageSection {
@@ -118,6 +117,7 @@ footer {
 .footerLinks li {
     list-style: none;
     line-height: 1.5em;
+    color: #b2bec3;
 }
 
 .footerLinks li a {
@@ -170,20 +170,25 @@ footer {
     color: #B2BEC3
 }
 
-#submit, .buyButton p {
+#submit, .buyButton p, .purchaseButton {
     background: #00B894;
     color: white;
     border: none;
     border-radius: 7px;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.8em;
+    cursor: pointer;
 }
 
-#submit:hover {
+.noDecor {
+    text-decoration: none;
+}
+
+#submit:hover, .buyButton p:hover, .purchaseButton:hover {
     background: #09dcb3;
 }
 
-#submit:active {
+#submit:active, .buyButton p:active, .purchaseButton:active {
     background: #08967a;
 }
 
@@ -194,7 +199,7 @@ footer {
     text-align: top;
 }
 
-.productsContainer, .reviewsContainer {
+.productsContainer, .reviewsContainer, .networksContainer {
     display: flex;
 }
 
@@ -204,7 +209,7 @@ footer {
     box-sizing: border-box;
 }
 
-.productImg img {
+.productImg img, .catItemImg img, .purchaseImg img, .purchaseForm {
     width: 100%;
     box-shadow: 0 0 10px #777777;
 }
@@ -213,12 +218,16 @@ footer {
     padding: 0% 7%;
 }
 
-.productCard h3 {
+.productCard h3, .catItemText h3, .purchaseText h3 {
     text-transform: uppercase;
     letter-spacing: 4px;
     line-height: 0.5em;
     font-weight: lighter;
     font-size: 2.5em;
+}
+
+.purchaseText h3 {
+    line-height: 1em;
 }
 
 .productCard p {
@@ -234,17 +243,175 @@ footer {
     font-size: 2em;
 }
 
+#seeMore {
+    background: #fdcb6e;
+    border: none;
+    border-radius: 7px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.8em;
+    cursor: pointer;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    min-width: 200px;
+}
+
+#seeMore:hover {
+    background: #ffeaa7;
+}
+
+#seeMore:active {
+    background: #dda94a;
+}
+
+#seeMore p {
+    padding: 2px;
+    color: white;
+}
+
+.reviewsContainer {
+    margin-bottom: 50px;
+}
+
 .reviewCard {
     width: 100%;
-    border: 1px solid black;
     margin: 0% 2%;
-    box-sizing: border-box;
 }
 
 .reviewImg img {
     width: 100%;
+    outline: 1px solid #a0a0a0;
 }
 
-.reviewImg p {
-    margin: -16px 0px;
+.reviewCardText {
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.networksContainer section{
+    display: flex;
+    width: 100%;
+}
+
+.netCard {
+    width: 100%;
+    margin: 0% 2.5%;
+}
+
+.netCardImg img{
+    width: 100%;
+    max-width: 200px;
+}
+
+.netCardText {
+    padding: 0% 8px;
+    font-size: 1.8em;
+}
+
+.netName {
+    font-weight: bold;
+}
+
+.netContent {
+    font-style: oblique;
+}
+
+.contactsContainer section {
+    display: flex;
+    font-size: 1.8em;
+}
+
+.contactsContainer p {
+    margin-left: 10px;
+    line-height: 0.5em;
+}
+
+.authorCard, .authorFooter section {
+    display: flex;
+    align-items: center;
+}
+
+.authorFooter img {
+    width: 40px;
+    height: 40px;
+}
+
+.authorFooter {
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+}
+
+.authorFooter div {
+    margin-left: 10px;
+}
+
+.authorPicture {
+    width: 300px;
+    margin-left: 20px;
+    padding-bottom: 6%;
+}
+
+.imgRep {
+    display: none;
+}
+
+.contactForm {
+    font-size: 2em;
+}
+
+.contactForm p {
+    font-weight: bold;
+}
+
+.contactForm form {
+    text-align: center;
+}
+
+.contactForm label {
+    margin-right: 10px;
+}
+
+#contact_text {
+    margin: 20px 0px;
+    width: 60%;
+    font-size: 0.7em;
+}
+
+#contact_email {
+    font-size: 0.7em;
+}
+
+.contactForm #submit {
+    font-size: 1em;
+}
+
+.dif {
+    display: none;
+}
+
+.purchaseForm {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.purchaseForm input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+.purchaseForm input.iBorder {
+    border: 1px solid #2D3436;
+    border-radius: 2px;
+    padding-left: 5px;
+}
+
+.tempAdvice {
+    font-size: 1em;
+    margin-top: -10px;
+    margin-bottom: -30px;
 }

@@ -1,3 +1,61 @@
+@media (max-width: 900px) {
+    .catItemText {
+        padding: 10px;
+    }
+
+    .catItemImg {
+        text-align: center;
+    }
+
+    .catItemImg img{
+        max-width: 400px;
+    }
+
+    .dif {
+        display: inherit;
+    }
+
+    .purchaseItem {
+        display: flex;
+    }
+
+    .purchaseImg {
+        margin: 0px 20px;
+    }
+
+    .purchaseText {
+        max-width: 800px;
+        padding-right: 20px;
+    }
+
+    .purchaseForm form {
+        box-sizing: border-box;
+    }
+
+    .purchaseForm {
+        max-width: 600px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .networksContainer {
+        display: block;
+    }
+
+    .netCard {
+        padding: 2% 5%;
+    }
+
+    .netCardImg img {
+        max-width: none;
+    }
+
+    .authorText p {
+        font-size: 1.8em;
+    }
+}
+
 @media (max-width: 750px) {
     .footerForm form {
         display: block;
@@ -9,5 +67,42 @@
 
     #username, #email, #submit {
         margin: 1% 0%;
+    }
+
+    .productsContainer, .reviewsContainer {
+        display: block;
+    }
+
+    .productCard, .reviewCard {
+        display: flex;
+    }
+
+    .productImg {
+        padding-top: 5%;
+    }
+
+    .productImg img {
+        width: 200px;
+    }
+
+    .reviewImg img {
+        width: 120px;
+    }
+
+    .reviewCardText {
+        padding: 9% 10px;
+    }
+
+    .authorText {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .authorText p {
+        font-size: 1.5em;
+    }
+
+    .authorPicture {
+        width: 250px;
     }
 }

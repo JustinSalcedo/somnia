@@ -1,0 +1,47 @@
+body {
+	background: #2D3436;
+	color: white;
+	text-align: center;
+	height: 100vh;
+}
+
+.messagePay {
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#successImg {
+	width: 100%;
+	max-width: 400px;
+	min-width: 200px;
+	margin-bottom: -25px;
+}
+
+#errorImg {
+	width: 100%;
+	max-width: 300px;
+	min-width: 150px;
+}
+
+.links {
+	color: #74b9ff;
+}
+
+.links:hover {
+	color: #E17055
+}
+
+
+@media (max-width: 400px) {
+	h2 {
+		font-size: 1.2em;
+	}
+
+	#successImg {
+		margin-bottom: -10px;
+	}
+}

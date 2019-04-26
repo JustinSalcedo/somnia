@@ -26,4 +26,96 @@
     .mainImg img {
         width: 200px;
     }
+
+    .productCard {
+        display: block;
+    }
+
+    .productImg img {
+        width: 100%;
+    }
+
+    .networksContainer section {
+        display: block;
+        text-align: center;
+    }
+
+    .netCard {
+        padding: 0;
+        margin-bottom: 45px;
+    }
+
+    .netCardImg {
+        padding: 0% 20%;
+    }
+
+    .authorCard {
+        display: block;
+    }
+
+    .authorImg {
+        display: none;
+    }
+
+    .authorFooter {
+        font-size: 1.5em;
+        display: block;
+        align-items: center;
+    }
+
+    .imgRep {
+        display: inherit;
+        width: 100%;
+        text-align: center;
+    }
+
+    .imgRep img {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #contact_text {
+        width: 90%;
+    }
+
+    .purchaseItem {
+        display: block;
+    }
+    
+    .purchaseImg {
+        text-align: center;
+        margin: 0px 15px;
+    }
+
+    .purchaseImg img{
+        max-width: 300px;
+    }
+
+    .purchaseText {
+        padding: 0px 15px;
+    }
+
+    .purchaseForm {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 450px) {
+    .reviewCard {
+        display: block;
+        text-align: center;
+    }
+
+    .netCardImg {
+        padding: 0;
+        min-width: 180px;
+    }
+
+    .contactsContainer section {
+        font-size: 1.2em;
+    }
+
+    .purchaseText h3 {
+        line-height: 1.2em;
+    }
 }

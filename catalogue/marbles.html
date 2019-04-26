@@ -3,15 +3,17 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Somnia</title>
+	<title>Marbles purchase</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="official site and announcement somnia boardgame">
 	<meta name="keywords" content="somnia, game, boardgame, card, orb, desk, marble, chess">
 	<meta name="author" content="Justin Salcedo">
+	<base href="../">
 	<link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/tablet.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/mobile.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/grid.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="css/animation.css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
 	<link rel="icon" href="icon.ico">
@@ -30,37 +32,50 @@
 			</ul>
 		</div>
 	</nav>
-	<main>
-		<div class="mainImgContainer fadeIn">
-			<div class="mainImg"><img src="image/question.png" alt="quote mark"></div>
+	<div class="gridContainer">
+		<br>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col4">
+				<div class="purchaseItem">
+					<div class="purchaseImg fadeIn">
+						<img src="image/marbles.jpg" alt="Glass marbles">
+					</div>
+					<div class="purchaseText">
+						<h3>Marbles - $6.99</h3>
+						<p>50pcs Multiple colors, beautiful player marbles bulk for marble games + 1 whistle for free. <wbr>Introducing the new, beatifully designed, glass player marbles by <i>The Toy House.</i></p>
+					</div>
+				</div>
+			</div>
+			<div class="col8">
+				<div class="purchaseForm">
+					<form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WRAMW9A69F4B6" method="post">
+						<label for="first_name">Name</label>
+						<br>
+						<input type="text" name="first_name" class="iBorder">
+						<br>
+						<label for="email">E-mail</label>
+						<br>
+						<input type="text" name="email" class="iBorder">
+						<br>
+						<label for="night_phone_a">Phone</label>
+						<br>
+						<input type="text" name="night_phone_a" class="iBorder">
+						<br>
+						<label for="address1">Address</label>
+						<br>
+						<input type="text" name="address1" class="iBorder">
+						<br>
+						<input type="submit" class="purchaseButton" name="submit" value="Buy now">
+					</form>
+				</div>
+			</div>
 		</div>
-		<div class="mainCaption fadeInUp">
-			<p>A new age is coming, it will be the cause...</p>
-		</div>
-		<div class="mainText">
-			<br>
-			<h2>What is it?</h2>
-			<p>Our challenge has been released and this rival doesn't know its own limits.</br>
-				Overwhelming, unstoppable and inextinguishable are some of the few words that can explain the real rage uncaged in its breed.</p><br>
-			<h2>How does this affect me?</h2>
-			<p>Are you ready for this? Don't forget to be prepared!</br>
-				You can get a copy of this being as soon as they just arrive.</br>
-				<strong>Preorder now!</strong></p><br>
-			<h2>Seriously, I don't get it...</h2>
-			<p>Somnia is a boardgame recently created with the purpose of riddle your logical thinking and calculation skills.</br>
-				All in a full rave of variables, elements, and situations. Something different from whatever you did before... probably.</p><br>
-		</div>
-		<div class="imageSection fadeInLeft4">
-				<div class="imageContainer"><img src="image/desk.jpg" alt="network desk"></div>
-				<div class="imageContainer"><img src="image/orb.jpg" alt="marble orbs"></div>
-				<div class="imageContainer"><img src="image/card.jpg" alt="joker cards"></div>
-		</div>
-		<div class="adviceContainer">
-			<div class="adviceLine"></div>
-			<p class="adviceText">Coming soon</p>
-			<div class="adviceLine"></div>
-		</div>
-	</main>
+		<br>
+		<br>
+		<br>
+	</div>
 	<footer>
 		<div class="footerLinks">
 			<ul>
